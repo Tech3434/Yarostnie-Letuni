@@ -9,9 +9,12 @@ var newship = preload("res://scenes/SpaceCraft.tscn");
 
 
 func _process(delta):
+	
 	if ships <= 3:
-		if (res == 500) || (res >= 500): 
+		if  (res == 500) || (res >= 500):
 			constract();
+	else:
+		pass
 	
 	res += 0.1 + tech;
 
@@ -26,5 +29,3 @@ func constract():
 	ships += 1;
 	res -= 500;
 	print(ships);
-
-
